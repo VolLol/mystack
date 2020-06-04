@@ -10,21 +10,26 @@ public class StackOnTheArrayList<E> {
     }
 
 
-    public void printAllElements() {
-        System.out.println(list);
+    public void push(Object item) {
+        list.add(item);
     }
 
-    public void addElement(E e) {
-        list.add(e);
+    public List show() {
+        return list;
+    }
+
+    public Object peek() {
+        if (list.isEmpty()) {
+            return null;
+        } else {
+            return list.get(list.size() - 1);
+        }
     }
 
 
-    public void deleteElement() {
-        list = list.subList(0, list.size() - 1);
-    }
-
-    public Object readTop() {
-        Object element = list.get(list.size() - 1);
-        return element;
+    public Object pop() {
+        Object o = list.get(list.size() - 1);
+        list.remove(list.size() - 1);
+        return o;
     }
 }
