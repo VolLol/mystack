@@ -1,3 +1,8 @@
+import MyStack.MyStackInterface;
+import MyStack.StackOnTheArrayList;
+import MyStack.StackOnTheLinkedList;
+import MyStack.StackOnTheVector;
+
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();

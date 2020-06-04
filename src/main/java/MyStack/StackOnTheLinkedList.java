@@ -1,6 +1,7 @@
+package MyStack;
+
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 public class StackOnTheLinkedList<E> implements MyStackInterface {
 
@@ -16,11 +17,12 @@ public class StackOnTheLinkedList<E> implements MyStackInterface {
     }
 
     public Object peek() {
-        if (list.isEmpty()) {
-            return null;
-        } else {
-            return list.get(list.size() - 1);
+        Object o = null;
+        try {
+            o = list.get(list.size() - 1);
+        } catch (IndexOutOfBoundsException e) {
         }
+        return o;
     }
 
     public Object pop() {

@@ -1,3 +1,5 @@
+package MyStack;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +21,12 @@ public class StackOnTheArrayList<E> implements MyStackInterface {
     }
 
     public Object peek() {
-        if (list.isEmpty()) {
-            return null;
-        } else {
-            return list.get(list.size() - 1);
+        Object o = null;
+        try {
+            o = list.get(list.size() - 1);
+        } catch (IndexOutOfBoundsException e) {
         }
+        return o;
     }
 
 

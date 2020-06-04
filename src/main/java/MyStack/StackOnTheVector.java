@@ -1,3 +1,5 @@
+package MyStack;
+
 import java.util.Vector;
 
 public class StackOnTheVector<E> implements MyStackInterface {
@@ -22,9 +24,9 @@ public class StackOnTheVector<E> implements MyStackInterface {
 
     public Object pop() {
         Object o = null;
-        if (list.size() > 0) {
+        try {
             o = list.get(list.size() - 1);
-            list.remove(list.size() - 1);
+        } catch (IndexOutOfBoundsException e) {
         }
         return o;
     }
