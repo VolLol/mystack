@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class StackOnTheArrayList<E> {
+public class StackOnTheArrayList<E> implements MyStackInterface {
 
     private List list;
 

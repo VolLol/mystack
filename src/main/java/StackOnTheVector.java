@@ -1,6 +1,6 @@
 import java.util.Vector;
 
-public class StackOnTheVector<E> {
+public class StackOnTheVector<E> implements MyStackInterface {
 
     private Vector<Object> list;
 
@@ -26,7 +26,7 @@ public class StackOnTheVector<E> {
         return o;
     }
 
-     public Vector<Object> show() {
+    public Vector<Object> show() {
         return list;
     }
 

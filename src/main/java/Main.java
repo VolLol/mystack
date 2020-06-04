@@ -5,12 +5,11 @@ public class Main {
         main.allAboutStackOnTheLinkedList();
         main.allAboutStackOnTheArrayList();
         main.allAboutStackOnTheVector();
-
     }
 
 
     private void allAboutStackOnTheLinkedList() {
-        StackOnTheLinkedList stackOnTheLinkedList = new StackOnTheLinkedList();
+        MyStackInterface stackOnTheLinkedList = new StackOnTheLinkedList();
 
         System.out.println("Print empty my empty stack on the base of linkedList: " + stackOnTheLinkedList.show());
         System.out.println("Print empty last element: " + stackOnTheLinkedList.peek());
@@ -34,7 +33,7 @@ public class Main {
     }
 
     private void allAboutStackOnTheArrayList() {
-        StackOnTheArrayList stackOnTheArrayList = new StackOnTheArrayList();
+        MyStackInterface stackOnTheArrayList = new StackOnTheArrayList();
 
         System.out.println("Print empty my empty stack on the base of ArrayList: " + stackOnTheArrayList.show());
         System.out.println("Print empty last element: " + stackOnTheArrayList.peek());
@@ -58,7 +57,7 @@ public class Main {
     }
 
     private void allAboutStackOnTheVector() {
-        StackOnTheVector stackOnTheVector = new StackOnTheVector();
+        MyStackInterface stackOnTheVector = new StackOnTheVector();
         System.out.println("Print empty my empty stack on the base of Vector: " + stackOnTheVector.show());
         System.out.println("Print empty last element: " + stackOnTheVector.peek());
 

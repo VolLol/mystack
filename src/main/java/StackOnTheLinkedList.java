@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class StackOnTheLinkedList<E> {
+public class StackOnTheLinkedList<E> implements MyStackInterface {
 
     private List list;
 
