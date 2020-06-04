@@ -21,8 +21,11 @@ public class StackOnTheVector<E> implements MyStackInterface {
     }
 
     public Object pop() {
-        Object o = list.get(list.size() - 1);
-        list.remove(list.size() - 1);
+        Object o = null;
+        if (list.size() > 0) {
+            o = list.get(list.size() - 1);
+            list.remove(list.size() - 1);
+        }
         return o;
     }
 
